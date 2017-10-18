@@ -1,0 +1,42 @@
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <a class="navbar-brand" href="#">
+    <img src="assets/images/cart-image.jpg" width="30" height="30" class="d-inline-block align-top" alt=""> Gocart
+  </a>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <span class="search-item">
+          <input type="text" (keypress)="searchKeys($event)" class="form-control" placeholder="Search">
+          <img *ngIf="filterQuery" (click)="clearSearch()" src="assets/images/close-icon.png">
+        </span>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Your GoCart
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Today's Deals</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact Us</a>
+      </li>
+      <li class="nav-item dropdown">
+        <div class="dropdown">
+            <a class="btn dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Your Orders
+            </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Log In</a>
+            <a class="dropdown-item" href="#">Sign Up</a>
+            <a class="dropdown-item" href="#">Wishlist</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
