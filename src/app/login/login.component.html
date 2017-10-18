@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="wrapper">
+    <form name="Login_Form" class="form-signin">
+      <div class="login-box">
+        <p class="access-title">Sign Into GoCart</p>
+        <label class="pull-left">Email ID</label>
+        <span *ngIf="loginStatus" class="log-error">{{errorMessage}}</span>
+        <input type="email" class="form-control" name="Email" autofocus="" />
+        <label>Password</label>
+        <input type="password" class="form-control" name="Password" />
+        <a (click)="goToForgotPassword()">
+          <label class="forgot">FORGOT PASSWORD</label>
+        </a>
+        <div class="log-button">
+          <button name="Submits" value="Login" type="Submit" (click)="signIn()">SIGN IN</button>
+        </div>
+        <div>
+          <p class="info">New to GoCart?</p>
+          <button class="signup" name="Submit" value="SignUp" (click)="goTosignUp()"> SIGN UP</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import * as _ from 'lodash';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -9,7 +10,7 @@ import * as _ from 'lodash';
 })
 export class HeaderComponent implements OnInit {
   public filterQuery = '';
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }

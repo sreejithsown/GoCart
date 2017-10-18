@@ -1,0 +1,133 @@
+.wrapper {
+	margin-top: 4%;
+	margin-bottom: 20px;
+}
+
+.forgot {
+	cursor: pointer;
+}
+
+.form-signin {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #FFF;
+  box-shadow: 0px 2px 27px 0px rgba(0, 0, 0, 0.12);
+  }
+
+.form-signin-heading {
+  text-align:center;
+  margin-bottom: 30px;
+}
+
+.form-control {
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+}
+
+.logo{
+  width: 500px;
+  height: 500px;
+}
+
+.login-box{
+  background: #232E40;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  padding: 30px 35px;
+}
+
+.login-box .access-title{
+    font-size: 1.7rem;
+}
+.login-box label{
+  color: #59D3CF;
+  text-align: left;
+  font-weight: normal;
+  display: block;
+  font-size: 1.3rem;
+  margin-top: 15px;
+  width: 40%;
+  margin-bottom: 0;
+}
+
+.login-box input[type="email"], .login-box input[type="password"] {  background: #232E40;
+  color: #FFF;
+  border-top:0;
+  border-right:0;
+  border-left:0;
+  border-bottom: 1px solid #111;
+  border-radius: 0;
+  padding:5px 0;
+  font-size: 15px;
+}
+
+.login-box input[type="email"]:focus, .login-box input[type="password"]:focus{
+  box-shadow: none;
+}
+
+.login-box label.forgot{
+  text-align: right;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  width:100%;
+  }
+
+.login-box button{
+  background: #FB494F;
+  border: 0;
+  border-radius: 22px;
+  color: #fff;
+  padding:11px 0;
+  text-align: center;
+  width: 85%;
+}
+
+.login-box button[disabled]{
+  cursor: not-allowed;
+	opacity: .65;
+}
+
+.login-box button.signup{
+  background: #fff;
+  color: #444;
+  border-radius: 0 !important;
+  width: 60%; 
+}
+.login-box button img{margin-right: 7px;}
+
+.log-error{
+  display: block;
+  color: #FB494F;
+  height: 15px;
+  font-size: 13px;
+  width: 60%;
+  float: right;
+  text-align: right;
+  margin-top: 15px;
+}
+
+.login-box .log-button{
+  padding:0 15%;
+}
+
+.log-button p{
+  padding: 10px 0 0;
+}
+
+.info {
+  font-weight: normal;
+  display: block;
+  font-size: 1rem;
+  margin-top: 8%;
+}
+
+.login-box button .signup{
+  background:#fff;
+  border: 0;
+  color: #fff;
+  padding:11px 0;
+  text-align: center;
+  width: 85%;
+}
