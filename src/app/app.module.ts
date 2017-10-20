@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule }   from '@angular/forms';
 
 import { routing } from './app.routing';
 import { AppComponent } from './app.component';
@@ -11,6 +12,9 @@ import { RecentlyViewedComponent } from './recently-viewed/recently-viewed.compo
 import { LoginComponent } from './login/login.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { SignupComponent } from './signup/signup.component';
+import { FooterComponent } from './footer/footer.component';
+import { PopularCategoriesComponent } from './popular-categories/popular-categories.component';
+import { WishlistComponent } from './wishlist/wishlist.component';
 
 @NgModule({
   declarations: [
@@ -21,10 +25,13 @@ import { SignupComponent } from './signup/signup.component';
     RecentlyViewedComponent,
     LoginComponent,
     ForgotPasswordComponent,
-    SignupComponent
+    SignupComponent,
+    FooterComponent,
+    PopularCategoriesComponent,
+    WishlistComponent
   ],
   imports: [
-    BrowserModule,NgbModule.forRoot(), routing
+    BrowserModule,NgbModule.forRoot(), routing, FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

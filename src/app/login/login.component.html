@@ -1,18 +1,30 @@
 <div class="container">
   <div class="wrapper">
-    <form name="Login_Form" class="form-signin">
+    <form name="login_Form" class="form-signin" #loginForm="ngForm">
       <div class="login-box">
         <p class="access-title">Sign Into GoCart</p>
         <label class="pull-left">Email ID</label>
-        <span *ngIf="loginStatus" class="log-error">{{errorMessage}}</span>
-        <input type="email" class="form-control" name="Email" autofocus="" />
+        <input type="email" class="form-control" name="email" #email="ngModel" autofocus="" required [(ngModel)]="user.email" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"/>
+        <div *ngIf="email.invalid && (email.dirty || email.touched)" class="alert alert-danger">
+          <div *ngIf="email.errors.required">
+            Email ID is required
+          </div>
+          <div *ngIf="email.errors.pattern">
+            Please provide a valid email ID 
+          </div>
+        </div>
         <label>Password</label>
-        <input type="password" class="form-control" name="Password" />
+        <input type="password" class="form-control" name="password" required [(ngModel)]="user.password" #password="ngModel"/>
+        <div *ngIf="password.invalid && (password.dirty || password.touched)" class="alert alert-danger">
+          <div *ngIf="password.errors.required">
+            password is required
+          </div>
+        </div>
         <a (click)="goToForgotPassword()">
           <label class="forgot">FORGOT PASSWORD</label>
         </a>
         <div class="log-button">
-          <button name="Submits" value="Login" type="Submit" (click)="signIn()">SIGN IN</button>
+          <button name="Submits" value="Login" type="Submit" [disabled]="!loginForm.valid" (click)="signIn()">SIGN IN</button>
         </div>
         <div>
           <p class="info">New to GoCart?</p>

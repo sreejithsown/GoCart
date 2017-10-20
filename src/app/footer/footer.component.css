@@ -1,0 +1,14 @@
+.footer{
+  background-color: #232f3e;
+  position:absolute;
+  width:100%;
+  color: white;
+}
+
+.content{
+  font-size: 12px;
+}
+
+.item-container h6{
+padding: 10px;
+}

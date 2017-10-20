@@ -1,0 +1,28 @@
+.card-header{
+ background-color: #f5e5e8;
+}
+
+.card-header a{
+  color: #009688;
+}
+
+.item-container{
+  background-color: #f5e5e8;  
+  height: 310px; 
+  outline: 2px solid #e6c7cd;
+  align-items: center;
+}
+
+
+.item-container img{
+  padding: 10px;
+}
+
+.add-to-cart{
+  float: right;
+}
+
+.contents{
+  background: #f5e5e8;
+}
+

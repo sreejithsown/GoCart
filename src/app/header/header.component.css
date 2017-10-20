@@ -32,3 +32,12 @@
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+
+.confirm {
+  background-color:#f45343;
+  /* float: left */
+}
+.cancel {
+  background-color: #232E40;
+  color:#fff;
+}

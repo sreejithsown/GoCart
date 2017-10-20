@@ -10,9 +10,22 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
   public filterQuery = '';
+  public loggedIn : boolean;
   constructor(private router: Router) { }
 
   ngOnInit() {
+    console.log("status",  localStorage.getItem('loggedStatus'));
+    if(localStorage.getItem('loggedStatus') == 'in'){
+      this.loggedIn = true;
+    }else{
+      this.loggedIn = false;
+    }
+  }
+
+  logOut(){
+    localStorage.setItem('loggedStatus', 'out');
+    localStorage.setItem('user', '');
+    this.router.navigate(['/login']);
   }
 
   searchKeys(event) {
