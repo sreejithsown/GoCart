@@ -15,6 +15,14 @@ import { SignupComponent } from './signup/signup.component';
 import { FooterComponent } from './footer/footer.component';
 import { PopularCategoriesComponent } from './popular-categories/popular-categories.component';
 import { WishlistComponent } from './wishlist/wishlist.component';
+import { RatingComponent } from './rating/rating.component';
+
+
+import { RatingModule } from 'ngx-bootstrap';
+import { YourGocartComponent } from './your-gocart/your-gocart.component';
+import { TodaysDealsComponent } from './todays-deals/todays-deals.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { DealItemComponent } from './deal-item/deal-item.component';
 
 @NgModule({
   declarations: [
@@ -28,10 +36,15 @@ import { WishlistComponent } from './wishlist/wishlist.component';
     SignupComponent,
     FooterComponent,
     PopularCategoriesComponent,
-    WishlistComponent
+    WishlistComponent,
+    RatingComponent,
+    YourGocartComponent,
+    TodaysDealsComponent,
+    ContactUsComponent,
+    DealItemComponent
   ],
   imports: [
-    BrowserModule,NgbModule.forRoot(), routing, FormsModule
+    BrowserModule,NgbModule.forRoot(), routing, FormsModule, RatingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container-fluid">
   <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
     <a class="navbar-brand" href="#">
       <img src="assets/images/cart-image.jpg" width="30" height="30" class="d-inline-block align-top" alt=""> Gocart
@@ -8,19 +8,11 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Your GoCart
-            <span class="sr-only">(current)</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Today's Deals</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact Us</a>
-        </li>
-      </ul>
+      <nav class="nav nav-tabs" id="myTab" role="tablist" mr-auto mt-2 mt-lg-0>
+        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Your GoCart</a>
+        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Today's Deals</a>
+        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact Us</a>
+      </nav>
       <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
@@ -40,4 +32,18 @@
       </form>
     </div>
   </nav>
+</div>
+
+<div class="tab-content container-fluid content" id="nav-tabContent">
+  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+      <app-carousel></app-carousel>  
+      <app-recently-viewed></app-recently-viewed>
+      <app-popular-categories></app-popular-categories>
+      <app-footer></app-footer>
+  </div>
+  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">tab2</div>
+  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">tab3</div>
+</div>
+<div>
+  <app-rating></app-rating>
 </div>

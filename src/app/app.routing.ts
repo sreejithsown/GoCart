@@ -6,9 +6,10 @@ import { RecentlyViewedComponent } from './recently-viewed/recently-viewed.compo
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { SignupComponent } from './signup/signup.component';
 import { WishlistComponent } from './wishlist/wishlist.component';
+import { AppComponent } from './app.component';
 
 const APP_ROUTES: Routes = [
-{ path: '', component: HomeComponent },
+{ path: '', component: LoginComponent },
 { path: 'login', component: LoginComponent },
 { path: 'forgotpwd', component: ForgotPasswordComponent },
 { path: 'signUp', component: SignupComponent },

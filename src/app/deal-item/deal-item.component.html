@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col-sm-3 column-one">   
+    <div>
+      <h3>{{item.category}}</h3>
+      <span class="badge badge-success">50% Off</span>
+    </div>
+  </div>
+  <div class="col-sm-9 column-two">
+    <div id="dealCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item" *ngFor="let slide of item.itemsImages; let i = index" [ngClass]="{active: i==0}">
+          <img class="d-block w-100" src="{{slide.url}}" alt="First slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#dealCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </a>
+      <a class="carousel-control-next" href="#dealCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </a>
+    </div>
+  </div>
+</div>

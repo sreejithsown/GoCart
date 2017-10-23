@@ -1,0 +1,22 @@
+.column-two{
+  height: 310px; 
+  outline: 2px solid #e6c7cd;
+  align-items: center;
+}
+
+.column-one{
+  background: #f5e5e8;
+  height: 310px; 
+  outline: 2px solid #e6c7cd;
+  align-items: center;
+}
+
+.column-one h3{
+  text-align: center;
+  margin-top: 120px;
+}
+
+.badge{
+  float: right;
+  margin:10px;
+}
