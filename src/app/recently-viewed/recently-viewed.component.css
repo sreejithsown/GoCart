@@ -18,6 +18,10 @@
   padding: 10px;
 }
 
+.item-container rating{
+  float:right;
+}
+
 .add-to-cart{
   float: right;
 }

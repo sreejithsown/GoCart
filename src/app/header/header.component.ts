@@ -27,6 +27,7 @@ export class HeaderComponent implements OnInit {
     localStorage.setItem('user', '');
     this.router.navigate(['/login']);
   }
+  
 
   searchKeys(event) {
     let isNumber = event.charCode >= 48 && event.charCode <= 57;
